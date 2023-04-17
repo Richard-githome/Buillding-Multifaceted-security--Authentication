@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(
   session({
-    secret: "This is the secret key",
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
   })
