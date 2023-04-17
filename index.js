@@ -59,8 +59,8 @@ passport.use(
     {
       clientID: process.env.GOOGLE_APP_ID,
       clientSecret: process.env.GOOGLE_APP_SECRET,
-      callbackURL: "http://localhost:3000/auth/google/secrets",
-      userProfileUrl: "https://www.googleapis.com/oauth2/v3/userinfo",
+      callbackURL: process.env.GOOGLE_CALLBACK,
+      userProfileUrl: process.env.GOOGLE_USERPROFILE,
     },
     function (accessToken, refreshToken, profile, cb) {
       User.findOrCreate({ googleId: profile.id }, function (err, user) {
@@ -75,7 +75,7 @@ passport.use(
     {
       clientID: process.env.FACEBOOK_APP_ID,
       clientSecret: process.env.FACEBOOK_APP_SECRET,
-      callbackURL: "http://localhost:3000/auth/facebook/secrets",
+      callbackURL: process.env.FACEBOOK_CALLBACK,
     },
     function (accessToken, refreshToken, profile, cb) {
       User.findOrCreate(
