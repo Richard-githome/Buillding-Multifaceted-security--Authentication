@@ -1,15 +1,11 @@
-# Buillding-Strong-Security-&-Multifacet-Authentication-Backend-Web-App
->>>>> :Hey Techie, good day (check this little app assessment out).
-
-Please, this little project is testing my backend level of proficiency (not necessarily frontend).
-
->>>>> Language:
-Firstly, this is a nodejs (javascript) application.
-Also, integrated EJS for templating.
-
->>>>> About the Application:
-The user to this application has to register/login either by inputting personal details or social media (Facebook/Google) IDs.
-For the social media authentication, i used Passport-Oauth2.
-
->>>>> Security Improvement:
-Then, i made use of both #hashing and #salting to improve user data security.
+# Node-Security-&-Multifacet-Authentication-OAuth:
+>: Hey Techie, good day (check this little app assessment out).
+> >: JavaScript/Node/Express framework/EJS templating engine.
+> >: Important middlewares: express-sessions, passport, & the required strategies { Authentication: OAuth.20 - Google, Facebook }
+> >: Database: MongoDB/Mongoose
+> >: Security Improvement: #hashing and #salting for data encryption\
+> >:
+# To run project on local system?
+> >: Fork & Clone project from Github
+> >: npm install
+> >npm 
